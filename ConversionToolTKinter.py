@@ -1,15 +1,15 @@
 #!/usr/bin/python
 
-import tkinter
-app = tkinter.Tk()
-v = tkinter.IntVar()
-v.set(1)
+import tkinter #TkinterGUI Import
+app = tkinter.Tk() #Tkinter Application
+v = tkinter.IntVar() #Integer Application
+v.set(1) #Set variable at 1
 app.geometry('480x300') #Window Dimensions
 app.title("Conversion Tool")	#Window Title
 
 def convert(sv,v,ot): #Conversion Formulas Functions
 	if (sv.get().isdigit()):
-		print("v.get() :"+str(v.get())+" | sv.get(): "+str(sv.get()))
+		print("v.get() :"+str(v.get())+" | sv.get(): "+str(sv.get())) #Print of Answer
 		if v.get() == 0:
 			ot.set("Please select an option for conversions")
 		elif v.get() == 1:
